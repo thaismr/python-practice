@@ -31,4 +31,3 @@ for grade, students in group_by_grades:
     print(f'{grade} students:')
     for student in students:
         print(list(student.values())[0])
-
