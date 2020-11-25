@@ -13,7 +13,7 @@ print(my_list)
 print(list(list_doubled))
 
 
-# We would rarely use the MAP function, instead we can use list COMPREHENSION:
+# We would rarely use the MAP function with lists, instead we can use list COMPREHENSION:
 list_doubled_cph = [x * 2 for x in my_list]
 
 print(list_doubled_cph)
