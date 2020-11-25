@@ -30,5 +30,5 @@ group_by_grades = groupby(sort_by_grades, get_grades)
 for grade, students in group_by_grades:
     print(f'{grade} students:')
     for student in students:
-        print(student)
+        print(list(student.values())[0])
 
