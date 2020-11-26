@@ -1,6 +1,12 @@
+import math
+
 ##
 # Data for use in map.py
 ##
+
+# Python does NOT have the concept of CONSTANTS
+# But we can INDICATE desirable constants with ALL CAPS
+PI = math.pi  # I can still change the value of PI whenever I want
 
 # Generate sample products list:
 # Using: round(price/.48, 2) to generate a float (price/.48) and round it to .2f
@@ -24,3 +30,14 @@ people = [
 ]
 
 my_list = list(range(1, 11))
+
+
+# We can have some code that will ONLY execute when this file is called DIRECTLY
+# When IMPORTED by other modules, the code below will NOT be executed:
+
+if __name__ == '__main__':
+
+    # debug our data lists:
+    print(products)
+    print(people)
+    print(my_list)

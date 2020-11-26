@@ -19,7 +19,8 @@ while True:
 
     num = convert_to_number(get_var)
 
-    if num is not None:
-        print(num)
-    else:
+    if num is None:
         print('not a number')
+    else:
+        print(num)
+        break

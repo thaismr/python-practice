@@ -26,7 +26,7 @@ except ZeroDivisionError as error:
 
 def my_own_division(num1, num2):
     if num2 == 0:
-       raise ValueError("num2 can't be 0.")  # Raise my own exception, will include traceback function
+        raise ValueError("num2 can't be 0.")  # Raise my own exception, will include traceback function
 
     return num1 / num2
 

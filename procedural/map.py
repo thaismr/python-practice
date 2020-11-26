@@ -1,5 +1,9 @@
 from procedural.map_data import my_list
 
+# Modules can also be imported as:
+import procedural.map_data
+from procedural import map_data
+
 ##
 # Python Map()
 # Runs a given Function through each element of a given Iterable, and returns a resulting Iterator
