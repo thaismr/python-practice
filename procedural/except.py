@@ -16,7 +16,7 @@ except (IndexError, KeyError) as error:  # eg: var[i] is out of range or key typ
     print('Error:', error)
 
 except Exception as error:  # any other error type
-    print('Unexpected error...')
+    print('Unexpected error...', error)
 
 else:
     print('Success! All is fine with the code.')
