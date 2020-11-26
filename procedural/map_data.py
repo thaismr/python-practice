@@ -12,15 +12,15 @@ products = [
 
 people = [
     {'name': 'Bla', 'age': 25},
-    {'name': 'Ble', 'age': 25},
-    {'name': 'Bli', 'age': 25},
-    {'name': 'Blo', 'age': 25},
-    {'name': 'Blu', 'age': 25},
-    {'name': 'Jane', 'age': 25},
-    {'name': 'John', 'age': 25},
-    {'name': 'Doe', 'age': 25},
-    {'name': 'Fulano', 'age': 25},
-    {'name': 'Beltrano', 'age': 25},
+    {'name': 'Ble', 'age': 26},
+    {'name': 'Bli', 'age': 27},
+    {'name': 'Blo', 'age': 28},
+    {'name': 'Blu', 'age': 29},
+    {'name': 'Jane', 'age': 35},
+    {'name': 'John', 'age': 45},
+    {'name': 'Doe', 'age': 55},
+    {'name': 'Fulano', 'age': 65},
+    {'name': 'Beltrano', 'age': 75},
 ]
 
 my_list = list(range(1, 11))

@@ -63,4 +63,13 @@ products_to_cents = [price_to_cents(product) for product in products]
 
 print(products_to_cents)
 print(products)  # our source is now back to cents/int
+print()
 
+
+# OPTIMIZED with a GENERATOR:
+products_to_dollar_gen = (price_to_dollar(product) for product in products)  # Iterator, nothing changed yet
+
+print(products)  # our source with prices in cents/int
+print(list(products_to_dollar_gen))  # iterate through our generator
+print(products)  # our source is now priced in dollar/float
+print()
