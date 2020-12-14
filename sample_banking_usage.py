@@ -1,4 +1,4 @@
-from samplebanking import Bank, Person, Client, Account, Regular, Savings
+from samplebanking import Bank, Client, Regular, Savings
 
 bank = Bank()
 client1 = Client('Jane Doe', 27)
@@ -10,13 +10,17 @@ acc2 = Savings(2222, 6369693, 100)
 client1.assign_account(acc1)
 client2.assign_account(acc2)
 
-client1.account.takeout(200)
-client1.account.takeout(1000)
-client1.account.takeout(350)
+if bank.authenticate(client1):
+    client1.account.takeout(200)
+    client1.account.takeout(1000)
+    client1.account.takeout(350)
+    client1.account.deposit(100)
+else:
+    print('Client not authenticated.')
 
-client1.account.deposit(100)
-
-client2.account.deposit(10)
-
-client2.account.takeout(50)
-client2.account.takeout(500)
+if bank.authenticate(client2):
+    client2.account.deposit(10)
+    client2.account.takeout(50)
+    client2.account.takeout(500)
+else:
+    print('Client not authenticated.')
